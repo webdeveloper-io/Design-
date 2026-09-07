@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | MANAS WEBDESIGNS</title>
+<meta name="description" content="MANAS WEBDESIGNS is a website design studio based in Betnoti, Odisha. See how the process works, from your first WhatsApp message to a finished website.">
+<meta property="og:title" content="About MANAS WEBDESIGNS">
+<meta property="og:description" content="A website design studio based in Betnoti, Odisha, working entirely over WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1666698809123-44e998e93f23?auto=format&fit=crop&w=1200&q=80">
+<meta name="theme-color" content="#0b1210">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B1210'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial, sans-serif' font-weight='700' fill='%233FC7A6' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b1210;
+    --surface:#121c19;
+    --surface-2:#17221f;
+    --border:#223330;
+    --text:#f1f4f2;
+    --text-muted:#9bb0a9;
+    --accent:#3fc7a6;
+    --accent-ink:#08120f;
+    --gold:#d8ae5c;
+    --silver:#b9c4c2;
+    --bronze:#c08a5e;
+    --font-display:'Space Grotesk', sans-serif;
+    --font-body:'IBM Plex Sans', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--text); font-family:var(--font-body); line-height:1.65; -webkit-font-smoothing:antialiased;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  .container{width:min(1180px,92%); margin-inline:auto;}
+  section{padding:88px 0;}
+  h1,h2,h3,h4{font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;}
+
+  header.site-header{position:sticky; top:0; z-index:60; background:rgba(11,18,16,.86); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
+  .logo{font-family:var(--font-display); font-weight:700; font-size:1.15rem; display:flex; flex-direction:column; line-height:1.1;}
+  .logo .mark{color:var(--accent);}
+  .logo .sub{font-family:var(--font-body); font-weight:400; font-size:0.62rem; color:var(--text-muted); letter-spacing:0.14em; margin-top:2px;}
+  nav.nav-links{display:flex; gap:32px;}
+  nav.nav-links a{font-size:0.95rem; color:var(--text-muted); position:relative; padding:4px 0; transition:color .25s ease;}
+  nav.nav-links a:hover, nav.nav-links a.active{color:var(--text);}
+  nav.nav-links a::after{content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .3s ease;}
+  nav.nav-links a:hover::after, nav.nav-links a.active::after{transform:scaleX(1);}
+  .nav-right{display:flex; align-items:center; gap:14px;}
+  .btn-whatsapp-nav{display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:var(--accent-ink); font-weight:600; padding:10px 18px; border-radius:999px; font-size:0.86rem; white-space:nowrap; transition:transform .2s ease, box-shadow .2s ease;}
+  .btn-whatsapp-nav:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(63,199,166,.25);}
+  .nav-toggle{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px;}
+  .nav-toggle span{width:22px; height:2px; background:var(--text); transition:transform .3s ease, opacity .3s ease;}
+  .nav-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.active span:nth-child(2){opacity:0;}
+  .nav-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  @media(max-width:880px){
+    .nav-toggle{display:flex;}
+    nav.nav-links{position:fixed; top:63px; left:0; right:0; background:var(--bg); border-bottom:1px solid var(--border); flex-direction:column; padding:22px 6%; gap:18px; transform:translateY(-140%); transition:transform .3s ease;}
+    nav.nav-links.open{transform:translateY(0);}
+  }
+
+  .btn-primary{background:var(--accent); color:var(--accent-ink); padding:14px 26px; border-radius:10px; font-weight:600; display:inline-flex; align-items:center; gap:10px; transition:transform .2s ease, box-shadow .2s ease;}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(63,199,166,.28);}
+  .btn-secondary{border:1px solid var(--border); color:var(--text); padding:14px 26px; border-radius:10px; font-weight:600; transition:border-color .2s ease, background .2s ease;}
+  .btn-secondary:hover{border-color:var(--accent); background:rgba(63,199,166,.08);}
+
+  .browser-frame{background:var(--surface-2); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:0 30px 60px -24px rgba(0,0,0,.6);}
+  .browser-frame .frame-bar{display:flex; align-items:center; gap:6px; padding:11px 14px; background:var(--surface); border-bottom:1px solid var(--border);}
+  .frame-bar .dot{width:8px; height:8px; border-radius:50%;}
+  .frame-bar .dot:nth-child(1){background:#e2645a;}
+  .frame-bar .dot:nth-child(2){background:#e4b155;}
+  .frame-bar .dot:nth-child(3){background:#4fb478;}
+  .frame-bar .url{margin-left:10px; height:7px; flex:1; max-width:220px; background:var(--border); border-radius:6px;}
+  .browser-frame img{width:100%; height:auto; display:block;}
+
+  .page-hero{padding-top:64px; padding-bottom:16px;}
+  .page-hero h1{font-size:clamp(2rem,4vw,3rem); max-width:18ch;}
+  .page-hero p.lead{margin-top:18px; color:var(--text-muted); font-size:1.05rem; max-width:56ch;}
+
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  @media(max-width:900px){.about-grid{grid-template-columns:1fr; gap:36px;}}
+  .about-grid p{color:var(--text-muted); margin-top:16px;}
+  .about-grid h2{font-size:clamp(1.5rem,2.8vw,2rem);}
+
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(1.55rem,3vw,2.1rem);}
+  .section-head p{color:var(--text-muted); margin-top:12px;}
+
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  @media(max-width:980px){.steps{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.steps{grid-template-columns:1fr;}}
+  .step{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:26px;}
+  .step .num{font-family:var(--font-display); color:var(--accent); font-size:1.6rem; font-weight:700; margin-bottom:14px;}
+  .step h3{font-size:1.05rem; margin-bottom:8px;}
+  .step p{color:var(--text-muted); font-size:0.92rem;}
+
+  .why-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px 32px;}
+  @media(max-width:640px){.why-grid{grid-template-columns:1fr;}}
+  .why-grid li{display:flex; gap:14px; align-items:flex-start; color:var(--text-muted); font-size:0.95rem;}
+  .why-grid li strong{color:var(--text); display:block; font-family:var(--font-display); font-weight:600; margin-bottom:3px;}
+  .why-grid svg{color:var(--accent); flex-shrink:0; margin-top:3px;}
+
+  .cta-banner{background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:48px; text-align:left; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;}
+  .cta-banner h2{font-size:clamp(1.3rem,2.4vw,1.7rem); max-width:32ch;}
+
+  footer{border-top:1px solid var(--border); padding:56px 0 28px; color:var(--text-muted);}
+  .footer-grid{display:flex; flex-wrap:wrap; justify-content:space-between; gap:36px;}
+  .footer-brand p{margin-top:14px; max-width:30ch; font-size:0.92rem;}
+  .footer-col h4{color:var(--text); font-family:var(--font-display); font-size:0.92rem; margin-bottom:14px;}
+  .footer-col a, .footer-col p{display:block; color:var(--text-muted); font-size:0.9rem; margin-bottom:9px;}
+  .footer-col a:hover{color:var(--accent);}
+  .footer-bottom{margin-top:40px; padding-top:20px; border-top:1px solid var(--border); font-size:0.8rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+
+  .icon-wrap{width:20px; height:20px; display:inline-flex; align-items:center; justify-content:center;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span><span class="mark">MANAS</span> WEBDESIGNS</span><span class="sub">BETNOTI · ODISHA</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn-whatsapp-nav" target="_blank" rel="noopener" href="https://wa.me/919437197191?text=Hi%20MANAS%20WEBDESIGNS%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20website.">
+        <span class="icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+        Book on WhatsApp
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>A small studio, run one WhatsApp chat at a time</h1>
+      <p class="lead">MANAS WEBDESIGNS is based in Betnoti, Odisha, and builds websites for the shops, clinics, and small businesses around it. No long forms, no waiting rooms — just a chat, a plan, and a website.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container about-grid">
+      <div class="browser-frame">
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url"></span></div>
+        <img src="https://images.unsplash.com/photo-1666698809123-44e998e93f23?auto=format&fit=crop&w=1200&q=80" alt="A small team sitting together with laptops, working on a project" loading="lazy">
+      </div>
+      <div>
+        <h2>What we do</h2>
+        <p>We design and build websites — from a single page introducing a shop, to a fuller multi-page site with a gallery and contact details. Every site is built to load quickly and to look right on a phone, since that's how most visitors will find it.</p>
+        <p>Because everything is coordinated over WhatsApp, there's no separate login, ticketing system, or app to install. You send us what you need, we send back drafts, and once you're happy, the site goes live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>How a project runs</h2>
+        <p>The same four steps apply whether you choose the Normal, Moderate, or Premium service.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>You reach out</h3>
+          <p>Message us on WhatsApp with your business details and which service fits your budget.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>We plan the pages</h3>
+          <p>We confirm what pages, photos, and information will go on the site before building anything.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>We design and build</h3>
+          <p>We put the site together and send drafts for you to review, right in the same chat.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>We launch it</h3>
+          <p>Once you approve the final version, the site goes live and you can start sharing the link.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container about-grid">
+      <div>
+        <h2>Why local businesses choose us</h2>
+        <ul class="why-grid" style="margin-top:24px;">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Straightforward pricing</strong>Three fixed packages, so you know the cost before you begin.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Mobile-first design</strong>Built to look right on the phone screens most customers browse from.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Easy to reach</strong>No portals or ticket numbers — just message us directly.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Based in Odisha</strong>Familiar with the kind of businesses we're building for.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="browser-frame">
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url"></span></div>
+        <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80" alt="A laptop open on a desk beside a cup, set up for a focused work session" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Have a business that needs a website?</h2>
+        <a class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/919437197191?text=Hi%20MANAS%20WEBDESIGNS%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20website.">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Book an appointment
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span><span class="mark">MANAS</span> WEBDESIGNS</span></a>
+        <p>Website design and support for businesses in and around Betnoti, Odisha — booked and delivered over WhatsApp.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#services">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>CHC, Backside of,<br>Betnoti, Odisha 757025</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a target="_blank" rel="noopener" href="https://wa.me/919437197191">+91 94371 97191</a>
+        <a target="_blank" rel="noopener" href="https://wa.me/919437197191?text=Hi%20MANAS%20WEBDESIGNS%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20a%20website.">Book on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MANAS WEBDESIGNS. All rights reserved.</span>
+      <span>Betnoti, Odisha 757025</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if(navToggle){
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+    }));
+  }
+</script>
+</body>
+</html>
